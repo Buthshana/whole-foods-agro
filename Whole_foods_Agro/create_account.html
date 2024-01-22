@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="fff.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="whole_foods_welcome.php" class="nav-link">Home</a>
+        <a href="loginpagefarmer.php" class="nav-link">Sign Up</a>
+    </div>
+
+    <div class="abc">
+        <section class="container">
+            <header>Registration Form</header>
+
+            <form class="form" action="db_operation.php" method="post">
+
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input required="" placeholder="Enter full name" type="text" name="fullName">
+                </div>
+
+                <div class="column1">
+                    <div class="input-box">
+                        <label>Phone number</label>
+                        <input required="" placeholder="Enter the Phone Number" type="tel" name="phoneNumber">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Date of Birth</label>
+                        <input required="" placeholder="Enter the Birthday" type="date" name="birthday">
+                    </div>
+                </div>
+
+                <div class="accoupation-box">
+                    <label>accoupation</label>
+
+                    <div class="accoupation">
+                        <input checked="" name="accoupation" id="check-farmer" type="radio" value="m">
+                        <label for="check-farmer">Farmer</label>
+                    </div>
+
+                    <div class="accoupation">
+                        <input name="accoupation" id="check-officer" type="radio" value="f">
+                        <label for="check-officer">Officer</label>
+                    </div>
+
+                    <div class="accoupation">
+                        <input name="accoupation" id="check-other" type="radio" value="o">
+                        <label for="check-other">Admin</label>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required />
+                </div>
+
+                <div class="input-box address">
+                    <label>Address</label>
+                    <input required="" placeholder="Enter the street address" type="text" name="streetAddress">
+
+                    <div class="column">
+                        <div class="select-box">
+                            <select name="district">
+                                <option hidden="">District</option>
+                                <option value="colombo">Colombo</option>
+                                <option value="rathnapura">Rathnapura</option>
+                                <option value="anuradapura">Anuradapura</option>
+                                <option value="jaffna">Jaffna</option>
+                                <option value="none">None of these</option>
+                            </select>
+                        </div>
+                        <input required="" placeholder="Enter the city" type="text" name="city">
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
